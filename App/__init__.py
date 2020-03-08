@@ -21,6 +21,7 @@ def create_app(selemium=False):
     return app
 
 db = Config.firebase.database()
+auth = Config.firebase.auth()
 
 
 
