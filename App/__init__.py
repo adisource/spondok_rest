@@ -1,8 +1,6 @@
 from flask import Flask
 from importlib import import_module
 from config import Config
-from pyrebase import pyrebase
-
 def register_blueprints(app):
 
 
@@ -20,8 +18,7 @@ def create_app(selemium=False):
     
     return app
 
-db = Config.firebase.database()
-auth = Config.firebase.auth()
+
 
 
 
